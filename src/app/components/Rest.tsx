@@ -25,7 +25,7 @@ export default function Rest({ timeRest }: Props) {
     }
   }, []);
   return (
-    <div className="bg-black/70 fixed top-0 left-0 w-full h-full z-40">
+    <div className="bg-black/70 fixed top-0 left-0 w-full h-full z-60">
       <div className="flex justify-center items-center h-screen bg-green-600/95">
         <div className="flex flex-col items-center gap-6">
           {timer != 0 && (
