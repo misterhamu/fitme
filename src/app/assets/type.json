@@ -1,0 +1,42 @@
+[
+  {
+    "type": 1,
+    "name": "str",
+    "color": "red",
+    "reps": 8,
+    "sets": 4,
+    "rest": 120
+  },
+  {
+    "type": 2,
+    "name": "agi",
+    "color": "orange",
+    "reps": 12,
+    "sets": 3,
+    "rest": 90
+  },
+  {
+    "type": 3,
+    "name": "vit",
+    "color": "green",
+    "reps": 20,
+    "sets": 3,
+    "rest": 60
+  },
+  {
+    "type": 4,
+    "name": "spe",
+    "color": "yellow",
+    "reps": 15,
+    "sets": 3,
+    "rest": 60
+  },
+  {
+    "type": 5,
+    "name": "end",
+    "color": "blue",
+    "reps": 1,
+    "sets": 1,
+    "rest": 0
+  }
+]

@@ -1,0 +1,99 @@
+[
+  {
+    "name": "Barbell Overhead Press",
+    "type": 1,
+    "isometric": false,
+    "superset": false,
+    "images": [""],
+    "link": "https://youtu.be/Q27cE71qc3I"
+  },
+  {
+    "name": "Bench Press",
+    "type": 1,
+    "isometric": false,
+    "superset": false,
+    "images": [""],
+    "link": "https://youtu.be/T-AlkQIJxC4"
+  },
+  {
+    "name": "Seated Dumbbell Press",
+    "type": 2,
+    "isometric": false,
+    "superset": true,
+    "images": [""],
+    "link": "https://youtu.be/BD3dIfductM"
+  },
+  {
+    "name": "Close Grip Dumbbell Bench Press",
+    "type": 2,
+    "isometric": false,
+    "superset": false,
+    "images": [""],
+    "link": "https://youtu.be/NmbSbRKP1wA"
+  },
+  {
+    "name": "Shoulder Push Up",
+    "type": 2,
+    "isometric": false,
+    "superset": false,
+    "images": [""],
+    "link": "https://youtu.be/1D7P5SK6nxw"
+  },
+  {
+    "name": "Chin Up",
+    "type": 2,
+    "isometric": false,
+    "superset": false,
+    "images": [""],
+    "link": "https://youtu.be/KBZlruRK1Ns"
+  },
+  {
+    "name": "Goblet Squat",
+    "type": 2,
+    "isometric": false,
+    "superset": false,
+    "images": [""],
+    "link": "https://youtu.be/TI0J5HfhuRE"
+  },
+  {
+    "name": "Lunge",
+    "type": 3,
+    "isometric": false,
+    "superset": false,
+    "images": [""],
+    "link": "https://youtu.be/xQpxUHHtQlw"
+  },
+  {
+    "name": "Dumbbell Row",
+    "type": 2,
+    "isometric": false,
+    "superset": false,
+    "images": [""],
+    "link": "https://youtu.be/h-uHB2sm7vU"
+  },
+  {
+    "name": "Face Pull",
+    "type": 3,
+    "isometric": false,
+    "superset": false,
+    "images": [""],
+    "link": "https://youtu.be/cq6OJ--VIRE"
+  },
+  {
+    "name": "Reverse Fly",
+    "type": 4,
+    "isometric": true,
+    "superset": false,
+    "images": [""],
+    "link": "https://youtu.be/Q8RKOVwa8DA"
+  },
+  {
+    "name": "Running",
+    "type": 5,
+    "isometric": false,
+    "superset": false,
+    "images": [""],
+    "link": ""
+  }
+]
+
