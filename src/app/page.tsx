@@ -8,6 +8,7 @@ import { getDateFormat } from "./libs/common";
 import DoneCard from "./components/DoneCard";
 import { useMutation, useQuery } from "@tanstack/react-query";
 import { WorkoutData } from "@/types/index";
+import Loading from "./loading";
 
 export interface Workout {
   name: string;
@@ -78,9 +79,6 @@ export default function Home() {
     onSettled: () => {},
   });
 
-  if (workout.isLoading) {
-    return <>Loading ...</>;
-  }
   return (
     <>
       <div className="p-2">
@@ -95,61 +93,70 @@ export default function Home() {
         />
       </div>
 
-      {/* Current */}
-      {workout.current ? (
-        <>
-          <div className="mb-6 p-2">
-            <CurrentCard workout={workout.current} callback={handleCurrent} />
-          </div>
-        </>
+      {workout.isLoading ? (
+        <Loading />
       ) : (
-        <div className="p-2">
-          <DoneCard callback={handleReset}/>
-        </div>
-      )}
-
-      {/* Incoming */}
-      {workout.incoming.length > 1 && (
         <>
-          <Divider className="my-4" />
-
-          <div className=" p-2">
-            <p className="text-lg font-semibold mb-2">Incoming</p>
-
-            <div className="flex flex-col gap-6">
-              {workout.incoming
-                .filter((workout, index) => index > 0)
-                .map((workout, key) => (
-                  <IncomingCard workout={workout} key={key} />
-                ))}
+          {/* Current */}
+          {workout.current ? (
+            <>
+              <div className="mb-6 p-2">
+                <CurrentCard
+                  workout={workout.current}
+                  callback={handleCurrent}
+                />
+              </div>
+            </>
+          ) : (
+            <div className="p-2">
+              <DoneCard callback={handleReset} />
             </div>
-          </div>
-        </>
-      )}
+          )}
 
-      {/* Completed */}
-      {workout.completed.length > 0 && (
-        <>
-          <div className="">
-            <Accordion>
-              <AccordionItem
-                key="1"
-                aria-label="Completed"
-                title="Completed"
-                className="text-lg font-semibold mb-2 text-gray-400"
-              >
+          {/* Incoming */}
+          {workout.incoming.length > 1 && (
+            <>
+              <Divider className="my-4" />
+
+              <div className=" p-2">
+                <p className="text-lg font-semibold mb-2">Incoming</p>
+
                 <div className="flex flex-col gap-6">
-                  {workout.completed.map((workout, key) => (
-                    <IncomingCard
-                      workout={workout}
-                      key={key}
-                      isComplete={true}
-                    />
-                  ))}
+                  {workout.incoming
+                    .filter((workout, index) => index > 0)
+                    .map((workout, key) => (
+                      <IncomingCard workout={workout} key={key} />
+                    ))}
                 </div>
-              </AccordionItem>
-            </Accordion>
-          </div>
+              </div>
+            </>
+          )}
+
+          {/* Completed */}
+          {workout.completed.length > 0 && (
+            <>
+              <div className="">
+                <Accordion>
+                  <AccordionItem
+                    key="1"
+                    aria-label="Completed"
+                    title="Completed"
+                    className="text-lg font-semibold mb-2 text-gray-400"
+                  >
+                    <div className="flex flex-col gap-6">
+                      {workout.completed.map((workout, key) => (
+                        <IncomingCard
+                          workout={workout}
+                          key={key}
+                          isComplete={true}
+                        />
+                      ))}
+                    </div>
+                  </AccordionItem>
+                </Accordion>
+              </div>
+            </>
+          )}
         </>
       )}
     </>
