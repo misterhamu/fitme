@@ -1,0 +1,67 @@
+[
+  {
+    "name": "Push Up",
+    "type": 2,
+    "isometric": false,
+    "superset": true,
+    "images": [""],
+    "link": ""
+  },
+  {
+    "name": "Wide Push Up",
+    "type": 2,
+    "isometric": false,
+    "superset": true,
+    "images": [""],
+    "link": ""
+  },
+  {
+    "name": "Narrow Push Up",
+    "type": 2,
+    "isometric": false,
+    "superset": true,
+    "images": [""],
+    "link": ""
+  },
+  {
+    "name": "Chin Up",
+    "type": 2,
+    "isometric": false,
+    "superset": false,
+    "images": [""],
+    "link": ""
+  },
+  {
+    "name": "Crunch",
+    "type": 2,
+    "isometric": false,
+    "superset": false,
+    "images": [""],
+    "link": ""
+  },
+  {
+    "name": "Plank",
+    "type": 3,
+    "isometric": false,
+    "superset": false,
+    "images": [""],
+    "link": ""
+  },
+  {
+    "name": "Stomach Vacuum",
+    "type": 2,
+    "isometric": false,
+    "superset": false,
+    "images": [""],
+    "link": ""
+  },
+  {
+    "name": "Running",
+    "type": 5,
+    "isometric": false,
+    "superset": false,
+    "images": [""],
+    "link": ""
+  }
+]
+

@@ -37,6 +37,14 @@
     "color": "blue",
     "reps": 1,
     "sets": 1,
-    "rest": 0
+    "rest": 60
+  },
+  {
+    "type": 6,
+    "name": "sup",
+    "color": "purple",
+    "reps": 1,
+    "sets": 10,
+    "rest": 60
   }
 ]

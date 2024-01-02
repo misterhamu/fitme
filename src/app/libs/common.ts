@@ -15,4 +15,5 @@ export const border = [
   "border-green-200 border-r-green-500",
   "border-yellow-200 border-r-yellow-500",
   "border-blue-200 border-r-blue-500",
+  "border-purple-200 border-r-purple-500",
 ];

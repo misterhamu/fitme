@@ -1,0 +1,58 @@
+[
+  {
+    "name": "Superhero Circuit",
+    "type": 6,
+    "isometric": false,
+    "superset": false,
+    "images": [""],
+    "link": ""
+  },
+  {
+    "name": "Hanging Knee Raise",
+    "type": 3,
+    "isometric": false,
+    "superset": false,
+    "images": [""],
+    "link": ""
+  },
+  {
+    "name": "Push Up",
+    "type": 2,
+    "isometric": false,
+    "superset": false,
+    "images": [""],
+    "link": ""
+  },
+  {
+    "name": "V Roll",
+    "type": 2,
+    "isometric": false,
+    "superset": false,
+    "images": [""],
+    "link": ""
+  },
+  {
+    "name": "Cable Crunch",
+    "type": 2,
+    "isometric": false,
+    "superset": false,
+    "images": [""],
+    "link": ""
+  },
+  {
+    "name": "Stomach Vacuum",
+    "type": 3,
+    "isometric": false,
+    "superset": false,
+    "images": [""],
+    "link": ""
+  },
+  {
+    "name": "Running",
+    "type": 5,
+    "isometric": false,
+    "superset": false,
+    "images": [""],
+    "link": ""
+  }
+]

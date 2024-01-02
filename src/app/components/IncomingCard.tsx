@@ -44,7 +44,7 @@ export default function IncomingCard({ workout, isComplete }: Props) {
                   <h3 className="text-xl font-semibold text-foreground/90 ">
                     {workout.name}
                   </h3>
-                  {getIcon(type.type)}
+                  {/* {getIcon(type.type)} */}
                 </div>
                 <div className="flex justify-between flex-row">
                   <p className="text-xl text-foreground/80">{type.reps} reps</p>

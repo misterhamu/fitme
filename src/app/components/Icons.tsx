@@ -250,8 +250,11 @@ export const Done: React.FC<IconSvgProps> = ({
   height,
   ...props
 }: IconSvgProps) => {
+  const { theme } = useTheme();
+
   return (
     <svg
+      fill={theme === "light" ? "#000": "#fff"}
       aria-hidden="true"
       focusable="false"
       height={size || height}

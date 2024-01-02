@@ -1,0 +1,58 @@
+[
+  {
+    "name": "Superhero Circuit",
+    "type": 6,
+    "isometric": false,
+    "superset": false,
+    "images": [""],
+    "link": ""
+  },
+  {
+    "name": "Hanging Oblique Twist",
+    "type": 3,
+    "isometric": false,
+    "superset": false,
+    "images": [""],
+    "link": ""
+  },
+  {
+    "name": "Dead Bug",
+    "type": 2,
+    "isometric": false,
+    "superset": false,
+    "images": [""],
+    "link": ""
+  },
+  {
+    "name": "Scapular Depression",
+    "type": 3,
+    "isometric": false,
+    "superset": false,
+    "images": [""],
+    "link": ""
+  },
+  {
+    "name": "Stomach Vacuum",
+    "type": 3,
+    "isometric": false,
+    "superset": false,
+    "images": [""],
+    "link": ""
+  },
+  {
+    "name": "Plank",
+    "type": 3,
+    "isometric": false,
+    "superset": false,
+    "images": [""],
+    "link": ""
+  },
+  {
+    "name": "Running",
+    "type": 5,
+    "isometric": false,
+    "superset": false,
+    "images": [""],
+    "link": ""
+  }
+]

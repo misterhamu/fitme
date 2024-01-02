@@ -18,7 +18,7 @@ export default function CurrentCard({ workout, callback }: Props) {
 
   const handleSet = () => {
     Rest.show();
-    Rest.setRest(Number(workout.detail?.rest))
+    Rest.setRest(Number(workout.detail?.rest));
     if (sets < workOutType[workout.type - 1].sets) {
       setSets((prev) => prev + 1);
     } else {
@@ -42,7 +42,7 @@ export default function CurrentCard({ workout, callback }: Props) {
           <div className="flex flex-col col-span-6 ">
             <div className="flex justify-between items-start">
               <div className="flex flex-col gap-0">
-                <h3 className="text-2xl font-semibold text-foreground/90 max-w-[230px]">
+                <h3 className="text-2xl font-semibold text-foreground/90 max-w-[210px]">
                   {workout.name}
                 </h3>
                 <p className="text-xl text-foreground/80">
@@ -50,24 +50,40 @@ export default function CurrentCard({ workout, callback }: Props) {
                 </p>
               </div>
               <div>
-                <p className="text-6xl">
+                <p className="text-5xl">
                   {sets}
-                  <span className="text-xl">/ {workOutType[workout.type - 1].sets}</span>
+                  <span className="text-xl">
+                    / {workOutType[workout.type - 1].sets}
+                  </span>
                 </p>
                 <p className="text-right">sets</p>
               </div>
             </div>
 
             <div className="flex justify-between mt-4">
-              <Button
-                isIconOnly
-                color="default"
-                aria-label="reset"
-                variant="bordered"
-                onClick={resetSets}
-              >
-                <Reset />
-              </Button>
+              <div className="flex gap-2">
+                <Button
+                  isIconOnly
+                  color="default"
+                  aria-label="reset"
+                  variant="bordered"
+                  onClick={resetSets}
+                >
+                  <Reset />
+                </Button>
+                <Button
+                  onClick={() => {
+                    callback(workout);
+                    resetSets();
+                  }}
+                  isIconOnly
+                  color="default"
+                  aria-label="reset"
+                  variant="bordered"
+                >
+                  <Done />
+                </Button>
+              </div>
               <Button
                 color={`${
                   sets < workOutType[workout.type - 1].sets

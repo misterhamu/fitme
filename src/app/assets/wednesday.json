@@ -1,0 +1,58 @@
+[
+  {
+    "name": "Spider Push Up",
+    "type": 2,
+    "isometric": false,
+    "superset": false,
+    "images": [""],
+    "link": ""
+  },
+  {
+    "name": "Reverse Push Up",
+    "type": 2,
+    "isometric": false,
+    "superset": false,
+    "images": [""],
+    "link": ""
+  },
+  {
+    "name": "Incline Push Up",
+    "type": 2,
+    "isometric": false,
+    "superset": false,
+    "images": [""],
+    "link": ""
+  },
+  {
+    "name": "Band Face Pull",
+    "type": 3,
+    "isometric": false,
+    "superset": false,
+    "images": [""],
+    "link": ""
+  },
+  {
+    "name": "Band Reverse Fly",
+    "type": 3,
+    "isometric": false,
+    "superset": false,
+    "images": [""],
+    "link": ""
+  },
+  {
+    "name": "Hip Thrust",
+    "type": 3,
+    "isometric": false,
+    "superset": false,
+    "images": [""],
+    "link": ""
+  },
+  {
+    "name": "Running",
+    "type": 5,
+    "isometric": false,
+    "superset": false,
+    "images": [""],
+    "link": ""
+  }
+]
