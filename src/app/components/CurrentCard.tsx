@@ -17,10 +17,10 @@ export default function CurrentCard({ workout, callback }: Props) {
   const Rest = useRest();
 
   const handleSet = () => {
-    Rest.show();
-    Rest.setRest(Number(workout.detail?.rest));
     if (sets - 1 < workOutType[workout.type - 1].sets) {
       setSets((prev) => prev + 1);
+      Rest.show();
+      Rest.setRest(Number(workout.detail?.rest));
     } else {
       callback(workout);
       resetSets();
