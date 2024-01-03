@@ -10,6 +10,7 @@ import WorkoutType from "../../assets/type.json";
 import { Workout } from "@/app/page";
 
 const today = new Date();
+today.toLocaleString('en-US', { timeZone: 'Asia/Bangkok' });
 today.setUTCHours(0, 0, 0, 0);
 const data = () => {
   const daysOfWeek = [

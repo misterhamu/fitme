@@ -19,7 +19,7 @@ export default function CurrentCard({ workout, callback }: Props) {
   const handleSet = () => {
     Rest.show();
     Rest.setRest(Number(workout.detail?.rest));
-    if (sets < workOutType[workout.type - 1].sets) {
+    if (sets - 1 < workOutType[workout.type - 1].sets) {
       setSets((prev) => prev + 1);
     } else {
       callback(workout);
@@ -51,7 +51,9 @@ export default function CurrentCard({ workout, callback }: Props) {
               </div>
               <div>
                 <p className="text-5xl">
-                  {sets}
+                  {sets >= workOutType[workout.type - 1].sets
+                    ? workOutType[workout.type - 1].sets
+                    : sets}
                   <span className="text-xl">
                     / {workOutType[workout.type - 1].sets}
                   </span>
@@ -86,7 +88,7 @@ export default function CurrentCard({ workout, callback }: Props) {
               </div>
               <Button
                 color={`${
-                  sets < workOutType[workout.type - 1].sets
+                  sets - 1 < workOutType[workout.type - 1].sets
                     ? "default"
                     : "success"
                 }`}
@@ -95,7 +97,7 @@ export default function CurrentCard({ workout, callback }: Props) {
               >
                 <div className="flex">
                   <p className="text-xl color-white">
-                    {sets < workOutType[workout.type - 1].sets
+                    {sets - 1 < workOutType[workout.type - 1].sets
                       ? "Take A Rest"
                       : "Next Workout"}
                   </p>

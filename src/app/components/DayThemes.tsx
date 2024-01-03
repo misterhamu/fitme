@@ -5,6 +5,7 @@ type Props = {};
 export default function DayThemes({}: Props) {
   const today = new Date();
   today.setUTCHours(0, 0, 0, 0);
+  today.toLocaleString('en-US', { timeZone: 'Asia/Bangkok' });
   let colors = [
     "bg-red-500",
     "bg-yellow-400",
