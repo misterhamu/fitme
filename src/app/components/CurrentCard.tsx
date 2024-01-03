@@ -23,7 +23,7 @@ export default function CurrentCard({ workout, callback }: Props) {
       Rest.setRest(Number(workout.detail?.rest));
     } else {
       callback(workout);
-      resetSets();
+      // resetSets();
     }
   };
 
