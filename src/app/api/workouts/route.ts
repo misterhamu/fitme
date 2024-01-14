@@ -1,5 +1,5 @@
 import { NextResponse } from "next/server";
-import Sunday from "../../assets/monday.json";
+import Sunday from "../../assets/sunday.json";
 import Monday from "../../assets/monday.json";
 import Tuesday from "../../assets/tuesday.json";
 import Wednesday from "../../assets/wednesday.json";
